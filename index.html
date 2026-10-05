@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Lolu ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div id="particles"></div>
+
+    <!-- MUSIC -->
+    <audio id="memoryMusic" loop>
+        <source src="assets/music/memories.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="cakeMusic">
+        <source src="assets/music/cake.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- PASSWORD -->
+    <section id="passwordScreen" class="screen active">
+
+        <div class="password-card">
+
+            <div class="lock-icon">🔐</div>
+
+            <p class="small-label">A LITTLE SURPRISE FOR YOU</p>
+
+            <h1>
+                Happy Birthday
+                <span>Lolu ❤️</span>
+            </h1>
+
+            <p class="subtitle">
+                There's something special waiting for you...
+            </p>
+
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="passwordInput"
+                    placeholder="Enter secret password"
+                    maxlength="20"
+                >
+
+                <button id="unlockBtn">
+                    Unlock My Surprise ✨
+                </button>
+
+            </div>
+
+            <p id="wrongPassword" class="error-message">
+                Hmm... that's not the secret password 👀
+            </p>
+
+            <p class="hint">
+                Hint: It's a special number ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- WELCOME -->
+    <section id="welcomeScreen" class="screen">
+
+        <div class="welcome-content">
+
+            <p class="eyebrow">
+                TODAY IS YOUR DAY ✨
+            </p>
+
+            <h1 class="hero-title">
+                Happy Birthday
+                <span>Lolu</span>
+            </h1>
+
+            <div
+                class="typewriter"
+                id="welcomeText">
+            </div>
+
+            <button
+                id="memoriesBtn"
+                class="main-btn">
+                Let's Begin ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- MEMORIES -->
+    <section id="memoriesScreen" class="screen">
+
+        <div class="section-container">
+
+            <p class="eyebrow">
+                A FEW LITTLE MEMORIES
+            </p>
+
+            <h2>
+                Moments worth remembering ✨
+            </h2>
+
+            <p class="section-intro">
+                Ten pictures, ten little moments,
+                and countless memories behind them.
+            </p>
+
+            <div class="memory-grid">
+
+                <article class="memory-card">
+                    <img src="assets/pictures/photo.1.jpg" alt="Memory 1">
+                    <div class="memory-text">
+                        <span>01</span>
+                        <p>Some moments quietly become our favourites.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <img src="assets/pictures/photo.2.jpg" alt="Memory 2">
+                    <div class="memory-text">
+                        <span>02</span>
+                        <p>This smile deserves its own little memory.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <img src="assets/pictures/photo.3.jpg" alt="Memory 3">
+                    <div class="memory-text">
+                        <span>03</span>
+                        <p>Good memories always find a way to stay.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <img src="assets/pictures/photo.4.jpg" alt="Memory 4">
+                    <div class="memory-text">
+                        <span>04</span>
+                        <p>Some pictures say more than words ever could.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <img src="assets/pictures/photo.5.jpg" alt="Memory 5">
+                    <div class="memory-text">
+                        <span>05</span>
+                        <p>A little moment, but a very big memory.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <img src="assets/pictures/photo.6.jpg" alt="Memory 6">
+                    <div class="memory-text">
+                        <span>06</span>
+                        <p>Life feels better when moments like this exist.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <img src="assets/pictures/photo.7.jpg" alt="Memory 7">
+                    <div class="memory-text">
+                        <span>07</span>
+                        <p>Another memory that deserves to be remembered.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <img src="assets/pictures/photo.8.jpg" alt="Memory 8">
+                    <div class="memory-text">
+                        <span>08</span>
+                        <p>Some memories become beautiful stories.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <img src="assets/pictures/photo.9.jpg" alt="Memory 9">
+                    <div class="memory-text">
+                        <span>09</span>
+                        <p>And somehow, this moment still feels special.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <img src="assets/pictures/photo.10.jpg" alt="Memory 10">
+                    <div class="memory-text">
+                        <span>10</span>
+                        <p>Maybe the best memories are the simplest ones.</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <button
+                id="cakeBtn"
+                class="main-btn">
+                There's One More Thing 🎂
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAKE -->
+    <section id="cakeScreen" class="screen">
+
+        <div class="cake-container">
+
+            <p class="eyebrow">
+                MAKE A WISH
+            </p>
+
+            <h2>
+                Happy Birthday Dholu ❤️
+            </h2>
+
+            <p id="candleInstruction">
+                Close your eyes and make a wish...
+            </p>
+
+            <div class="cake">
+
+                <div class="candle candle-one">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle-two">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle-three">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="cake-top">
+
+                    <div class="cream cream-one"></div>
+                    <div class="cream cream-two"></div>
+                    <div class="cream cream-three"></div>
+
+                </div>
+
+                <div class="cake-body">
+
+                    <div class="cake-line"></div>
+                    <div class="cake-line"></div>
+                    <div class="cake-line"></div>
+
+                </div>
+
+                <div class="cake-bottom"></div>
+
+            </div>
+
+            <button
+                id="blowBtn"
+                class="main-btn">
+                Blow Out The Candles 🕯️
+            </button>
+
+            <p
+                id="wishText"
+                class="wish-text">
+                Make your wish... ✨
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CELEBRATION -->
+    <section id="celebrationScreen" class="screen">
+
+        <div id="balloons"></div>
+        <div id="confetti"></div>
+        <div id="fireworks"></div>
+
+        <div class="celebration-content">
+
+            <div class="celebration-emoji">
+                🎉
+            </div>
+
+            <p class="eyebrow">
+                THE WISH IS MADE
+            </p>
+
+            <h1>
+                Happy Birthday
+                <span>Dholu ❤️</span>
+            </h1>
+
+            <p>
+                May this year bring you more smiles,
+                more beautiful moments and everything
+                your heart wishes for.
+            </p>
+
+            <button
+                id="giftBtn"
+                class="main-btn">
+                There's A Gift For You 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- GIFT -->
+    <section id="giftScreen" class="screen">
+
+        <div class="gift-container">
+
+            <p class="eyebrow">
+                ONE LAST SURPRISE
+            </p>
+
+            <h2>
+                A little something for you 🎁
+            </h2>
+
+            <div
+                id="giftBox"
+                class="gift-box">
+
+                <div class="gift-lid">
+                    <div class="gift-ribbon"></div>
+                </div>
+
+                <div class="gift-body">
+                    <div class="gift-ribbon"></div>
+                </div>
+
+            </div>
+
+            <p id="giftHint">
+                Tap the gift to open it ✨
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- LETTER -->
+    <section id="letterScreen" class="screen">
+
+        <div class="letter-container">
+
+            <div
+                class="envelope"
+                id="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter-paper">
+
+                    <div class="letter-content">
+
+                        <p class="letter-date">
+                            For someone special ❤️
+                        </p>
+
+                        <h2>
+                            Dear Lolu,
+                        </h2>
+
+                        <p>
+                           Pta hi nhi chala kab
+                           1 saal se bhi zyada ho gya
+                           hume saath me. 🥹
+                        </p>
+
+                        <p>
+                            Is beech bohot saari
+                            baatein, hasi-mazaak aur
+                            yaadein bani hain.
+                            Aur honestly, ye friendship
+                            mere liye kaafi special hai. 🫶🏻
+                        </p>
+
+                        <p>
+                            Bas hamesha aise hi khush reh,
+                            smile krti reh aur apni ye
+                            pagal si vibe kabhi mat badalna. 😂
+                        </p>
+
+                        <p>
+                            Happy Birthday once again Lolu! ❤️
+                            Aise hi bohot saari memories
+                            abhi aur banani hain. 🫶🏻
+                        </p>
+
+                        <p>
+                            Keep being the person you are.
+                            Keep smiling. Keep shining.
+                            And most importantly, keep making
+                            beautiful memories.
+                        </p>
+
+                        <p class="letter-ending">
+                            Happy Birthday, Dholu ❤️
+                        </p>
+
+                        <p class="signature">
+                            With lots of love,<br>
+                            Someone who wanted to make your
+                            day a little more special.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="envelope-front"></div>
+
+            </div>
+
+            <button
+                id="openLetterBtn"
+                class="main-btn">
+                Open Your Letter 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section id="finalScreen" class="screen">
+
+        <div class="final-content">
+
+            <div class="heart-animation">
+                ❤️
+            </div>
+
+            <p class="eyebrow">
+                THAT'S ALL... FOR NOW
+            </p>
+
+            <h1>
+                Happy Birthday,
+                <span>Dholu</span>
+            </h1>
+
+            <p class="final-message">
+                This little surprise may end here,
+                but I hope the smiles and memories
+                stay with you for a very long time.
+            </p>
+
+            <p class="final-love">
+                You deserve all the happiness in the world. ✨
+            </p>
+
+            <button
+                id="replayBtn"
+                class="main-btn">
+                Replay The Surprise ↻
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
